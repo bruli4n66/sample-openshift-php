@@ -1,5 +1,5 @@
 kind: Template
-apiVersion: v1
+apiVersion: template.openshift.io/v1
 metadata:
   name: lamp-app
   annotations:
@@ -39,7 +39,7 @@ parameters:
   displayName: PHP Version
   description: Version of PHP to be used.
   required: true
-  value: '7.1'
+  value: '8.0-ubi8'
 - name: DATABASE_VERSION
   displayName: MySQL Version
   description: Version of MySQL to be used.
